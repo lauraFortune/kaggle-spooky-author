@@ -1,9 +1,12 @@
 
-# Spooky Author Identification: Spark NLP Pipeline
-![Banner](images/banner.png)
+# Spooky Author Identification - Spark NLP Pipeline
+![Banner](images/header.png)
 
-The Kaggle Spooky Author Identification competition challenges participants with predicting the famous author (Edgar Allan Poe, HP Lovecraft, and Mary Shelley) based on short excerpts from horror stories. <br> 
+> Kaggle's Spooky Author Idetification competition walktrough
 
+[![Kaggle Competition](https://img.shields.io/badge/Kaggle-Competition-F2FA98)](https://www.kaggle.com/competitions/spooky-author-identification)
+[![PySpark](https://img.shields.io/badge/PySpark-3.5.3-8FB4FF)](https://spark.apache.org/)
+[![Python](https://img.shields.io/badge/Python-3.12-FAA698)](https://spark.apache.org/)
 **Competition Website:** https://www.kaggle.com/competitions/spooky-author-identification <br>
 
 Kaggle provide two files:
