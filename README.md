@@ -14,20 +14,9 @@
 **Task:** Train a model on the labelled training set to accurately attribute each text excerpt to its author in the unlabelled test set. <br>
 **Log Loss:** The evaluation model favours highly confident correct predictions, resulting in lower log loss scores. While correct predictions that are also low in confidence can incur greater penalties than incorrect predictions. Consequently, confidence probability estimates are far more important than pure accuracy. <br>
 **Technology:** PySpark ML library, Python, Jupyter Notebook <br>
-**Classifiers Tested:** Logistic Regression (best), Multinominal Naive Bayes, Random Forest. 
-**Pipeline:** Tokenize --> Stopword Removal --> CountVectorizer --> IDF (TF-IDF) --> Classifier --> Predictions<br>
+**Pipeline:** Tokenizer --> Stopword Removal --> CountVectorizer --> IDF (TF-IDF) --> Classifier --> Predictions <br>
+**Classifiers:** Logistic Regression (best), Multinominal Naive Bayes, Random Forest. <br>
 
-```mermaid
-flowchart LR
-A[Raw Text] --> B[Regex Tokenizer]
-B --> C[StopWords Remover]
-C --> D[Count Vectorizer]
-D --> E[IDF]
-F[Author Labels] --> G[String Indexer]
-E --> H[Classifier]
-G --> H
-H --> I[Predictions]
-```
 ### Results 
 | Model | Log Loss | Best Params |
 | :---- |:-------- |:----------- |
