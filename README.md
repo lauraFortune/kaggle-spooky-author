@@ -7,11 +7,6 @@
 [![Kaggle Competition](https://img.shields.io/badge/Kaggle-Competition-F2FA98)](https://www.kaggle.com/competitions/spooky-author-identification)
 [![PySpark](https://img.shields.io/badge/PySpark-3.5.3-8FB4FF)](https://spark.apache.org/)
 [![Python](https://img.shields.io/badge/Python-3.12-FAA698)](https://spark.apache.org/)
-**Competition Website:** https://www.kaggle.com/competitions/spooky-author-identification <br>
-
-Kaggle provide two files:
-- a labelled train.csv (id, text, author)
-- an unlabelled test.csv (id, text)
 
 ## How to Run Locally
 **Setup**
