@@ -12,7 +12,7 @@
 **Competition:** Spooky Author Identification <br>
 **Problem:** Predict the author of excerpts from horror stories by Edgar Allan Poe, Mary Shelley, and HP Lovecraft.<br>
 **Task:** Train a model on the labelled training set to accurately attribute each text excerpt to its author in the unlabelled test set. <br>
-**Log Loss:** The evaluation model favours highly confident correct predictions, resulting in lower log loss scores. While correct predictions that are also low in confidence can incur greater penalties than incorrect predictions. Consequently, confidence probability estimates are far more important than pure accuracy. <br>
+**Log Loss:** Log loss rewards confident correct predictions and heavily penalises confident wrong ones, so well-calibrated probabilities matter more than raw accuracy. <br>
 **Technology:** PySpark ML library, Python, Jupyter Notebook <br>
 **Pipeline:** Tokenizer --> Stopword Removal --> CountVectorizer --> IDF (TF-IDF) --> Classifier --> Predictions <br>
 **Classifiers:** Logistic Regression (best), Multinominal Naive Bayes, Random Forest. <br>
@@ -25,6 +25,10 @@
 | Random Forest | 0.92 |  |
 
 **Kaggle Submission Score:** 0.46689 (Logistic Regression)
+
+Log loss improved from 9.7 to 0.467 over 10 submissions, mainly through regularisation and training on the full dataset
+
+### Pipeline
 
 ## How to Run
 
