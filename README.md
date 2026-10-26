@@ -1,6 +1,6 @@
 
 # Kaggle: Spooky Author Identification
-![Banner](images/header.png)
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/594bd99c-78bc-408c-bde6-03d3753a32ea" />
 
 > Kaggle's Spooky Author Identification competition using PySpark MLlib. Originally developed on Databricks as part of a 'Programming for Big Data' assignment, and later converted for local Spark development. This project served as an introduction to machine learning, focusing on exploring text classification techniques and the ML pipeline, rather than optimisation for Kaggle submission.
 
