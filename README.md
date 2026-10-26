@@ -29,6 +29,7 @@
 Log loss improved from 9.7 to 0.467 over 10 submissions, mainly through regularisation and training on the full dataset
 
 ### Pipeline
+<img width="813" height="1113" alt="image" src="https://github.com/user-attachments/assets/02e008d5-6ea1-4d2f-a276-3f3c6981a7a4" />
 
 ## How to Run
 
