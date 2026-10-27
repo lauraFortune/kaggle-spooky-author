@@ -1,6 +1,6 @@
 
 # Kaggle: Spooky Author Identification
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/594bd99c-78bc-408c-bde6-03d3753a32ea" />
+![banner](images/header.png)
 
 > Kaggle's Spooky Author Identification competition using PySpark MLlib. Originally developed on Databricks as part of a 'Programming for Big Data' assignment, and later converted for local Spark development. This project served as an introduction to machine learning, focusing on exploring text classification techniques and the ML pipeline, rather than optimisation for Kaggle submission.
 
@@ -15,21 +15,21 @@
 **Log Loss:** Log loss rewards confident correct predictions and heavily penalises confident wrong ones, so well-calibrated probabilities matter more than raw accuracy. <br>
 **Technology:** PySpark ML library, Python, Jupyter Notebook <br>
 **Pipeline:** Tokenizer --> Stopword Removal --> CountVectorizer --> IDF (TF-IDF) --> Classifier --> Predictions <br>
-**Classifiers:** Logistic Regression (best), Multinominal Naive Bayes, Random Forest. <br>
+**Classifiers:** Logistic Regression (best), Multinomial Naive Bayes, Random Forest. <br>
 
 ### Results 
 | Model | Log Loss | Best Params |
 | :---- |:-------- |:----------- |
-| **Logistic Regression** | **0.49** | regParam: 0.08, vocabSize: 11500, elasticNetParam: 0.0 |
+| **Logistic Regression** | **0.49** | regParam: 0.09, vocabSize: 11500, elasticNetParam: 0.0 |
 | Naive Bayes | 0.59 |  |
 | Random Forest | 0.92 |  |
 
 **Kaggle Submission Score:** 0.46689 (Logistic Regression)
 
-Log loss improved from 9.7 to 0.467 over 10 submissions, mainly through regularisation and training on the full dataset
+Log loss improved from 9.7 to 0.467 over 10 submissions, mainly through regularisation and training on the full dataset ([submission history](images/kaggle-submissions.png)).
 
 ### Pipeline
-<img width="813" height="1113" alt="image" src="https://github.com/user-attachments/assets/02e008d5-6ea1-4d2f-a276-3f3c6981a7a4" />
+![Spooky Author pipeline diagram](images/pipeline.png)
 
 ## How to Run
 
@@ -60,4 +60,4 @@ jupyter notebook spooky-author-identification.ipynb
 - `notebooks/spooky-author-identification.ipynb` - Local PySpark notebook
 - `notebooks/spooky-author-identification-databricks.ipynb` - Original Databricks version
 - `data/` - Kaggle training and test datasets
-- `output` - Kaggle submission (predictions CSV)
+- `output/` - Kaggle submission (predictions CSV)
