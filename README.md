@@ -17,14 +17,15 @@
 **Pipeline:** Tokenizer --> Stopword Removal --> CountVectorizer --> IDF (TF-IDF) --> Classifier --> Predictions <br>
 **Classifiers:** Logistic Regression (best), Multinomial Naive Bayes, Random Forest. <br>
 
-### Results 
+### Notebook Results 
+Data split: 70% training set / 30% validation set
 | Model | Log Loss | Best Params |
 | :---- |:-------- |:----------- |
-| **Logistic Regression** | **0.49** | regParam: 0.09, vocabSize: 11500, elasticNetParam: 0.0 |
-| Naive Bayes | 0.59 |  |
-| Random Forest | 0.92 |  |
+| **Logistic Regression** | **0.50** | regParam: 0.09, vocabSize: 11500, elasticNetParam: 0.0 |
+| Naive Bayes | 0.59 | smoothing: 580, vocabSize: 22500 |
+| Random Forest | 0.99 | numTrees: 100, maxDepth: 15, vocabSize: 2000 |
 
-**Kaggle Submission Score:** 0.46689 (Logistic Regression)
+**Final Kaggle Submission Score:** 0.46689 (Logistic Regression)
 
 Log loss improved from 9.7 to 0.467 over 10 submissions, mainly through regularisation and training on the full dataset ([submission history](images/kaggle-submissions.png)).
 
